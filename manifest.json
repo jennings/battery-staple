@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+
+    "name": "Battery Staple",
+    "description": "Generates passphrases such as 'correct horse battery staple'",
+    "version": "0.1",
+
+    "optional_permissions": [
+        "clipboardWrite"
+    ],
+
+    "browser_action": {
+        "default_popup": "generator.html"
+    }
+}
