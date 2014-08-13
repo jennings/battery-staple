@@ -1,19 +1,22 @@
 window.Generator = (function () {
 
-    this.generate = function() {
-        var pw = randomWord() + " " +
-                 randomWord() + " " +
-                 randomWord() + " " +
-                 randomWord();
-
-        return pw;
-    };
-
     function randomWord() {
         var max = window.DICT.length;
         var ix = Math.floor(Math.random() * (max + 1));
         return window.DICT[ix];
     }
+
+    return {
+        generate: function() {
+            var pw =
+                randomWord() + " " +
+                randomWord() + " " +
+                randomWord() + " " +
+                randomWord();
+
+            return pw;
+        }
+    };
 
 })();
 
