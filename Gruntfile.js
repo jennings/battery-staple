@@ -1,15 +1,30 @@
 module.exports = function (grunt) {
 
     grunt.initConfig({
-        jshint: {
-            files: ['*.js']
+
+        compress: {
+            main: {
+                options: {
+                    archive: 'battery-staple.zip'
+                },
+                files: [
+                    { cwd: 'src/', src: ['**'], expand: true }
+                ]
+            }
         },
+
+        jshint: {
+            files: ['Gruntfile.js', 'src/*.js']
+        },
+
         watch: {
             files: ['*.js'],
-            tasks: ['jshint']
+            tasks: ['jshint', 'compress']
         }
+
     });
 
+    grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
