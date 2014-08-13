@@ -1,0 +1,25 @@
+{
+  "name": "battery-staple",
+  "version": "0.0.0",
+  "description": "Battery Staple ===============",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jennings/battery-staple.git"
+  },
+  "author": "Stephen Jennings",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jennings/battery-staple/issues"
+  },
+  "homepage": "https://github.com/jennings/battery-staple"
+}
