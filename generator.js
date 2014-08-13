@@ -1,4 +1,4 @@
-window.Generator = new function () {
+window.Generator = new (function () {
 
     this.generate = function() {
         var pw = randomWord() + " " +
@@ -15,7 +15,7 @@ window.Generator = new function () {
         return window.DICT[ix]
     }
 
-}();
+})();
 
 function addListener(element, eventName, handler) {
     if (element.addEventListener) {
@@ -36,8 +36,9 @@ addListener(document.getElementById('copy'), 'click', function () {
         permissions: ['clipboardWrite']
     }, function(granted){
         if (granted) {
-            document.getElementById('generate').select();
+            document.getElementById('pw').select();
             document.execCommand('copy');
+            window.close();
         } else {
             console.log('permission not granted')
         }

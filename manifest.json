@@ -3,7 +3,7 @@
 
     "name": "Battery Staple",
     "description": "Generates passphrases such as 'correct horse battery staple'",
-    "version": "0.1",
+    "version": "0.2",
 
     "optional_permissions": [
         "clipboardWrite"
